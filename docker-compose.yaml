@@ -1,0 +1,24 @@
+version: '3.3'
+
+services:
+  # db:
+  #   container_name: dbContainer
+  #   image: mysql:5.7
+  #   volumes:
+  #   - /home/crismon-01/Documenti/TESI/Docker/mysqlLogin/datas:/var/lib/mysql
+  #   ports:
+  #   - 3306
+  #   environment:
+  #    MYSQL_ROOT_PASSWORD: "root"
+  #    MYSQL_USER: "root"
+  #    MYSQL_PASSWORD: "root"
+  #    MYSQL_DATABASE: "schema1"
+  java:
+    container_name: loginJava
+    image: openjdk:11
+    # depends_on:
+    # - db
+    # volumes:
+    # - ./home/crismon-01/Documenti/TESI/Docker/mysqlLogin:/usr/src/myapp 
+    # working_dir: /usr/src/myapp
+    # command: bash -c "java -jar LogiIn.jar"
